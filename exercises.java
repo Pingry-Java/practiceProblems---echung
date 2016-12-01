@@ -61,7 +61,7 @@ public class exercises
 	public static void printArray(int[][] arr)
 	{ 
 		int lengthArr = arr.length;
-		printLines(lengthArr); 
+		System.out.println(); 
 		for (int row = 0; row < lengthArr; row++)
 		{
 			System.out.print("|"); 
@@ -72,22 +72,7 @@ public class exercises
 				else
 					System.out.print(arr[row][column] + "|"); 
 			}
-			printLines(lengthArr); 	
+			System.out.println(); 	
 		}	
-	}
-	
-	/**
-	 * this method helps format the printed array by adding lines to separate the numbers
-	 * @param length  the length of the array --> the number of times the "---" should be 
-	 * added onto the string lines
-	 */
-	public static void printLines(int length)
-	{
-		String lines = "";
-		int counter = 0;
-		while(counter != length);
-			lines += "---";
-			counter++;
-		System.out.println(lines);
 	}
 }
